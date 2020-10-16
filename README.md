@@ -53,6 +53,8 @@ Time: Real: 00:01:08.188, CPU: 00:02:18.363
 
 
 ## Environment:
+language: F#
+
 MacBook Pro 
 2.3 GHz Dual-Core Intel Core i5
 
@@ -68,3 +70,25 @@ Test time: 2020.9.18
 		 	 		
 					
 
+# project2
+
+## Introduction:
+In this project, we implement the 2 algorithms:
+- gossip
+- push-sum
+
+## How to run the code:
+```
+// topo= "full", topo= "2D", topo= "line", topo= "imp2D" 
+// algorithm = "gossip" or "push-sum"
+dotnet fsi --langversion:preview proj2.fsx 10 full gossip
+dotnet fsi --langversion:preview proj2.fsx 10 imp2D push-sum
+```
+
+## Developing:
+- F#
+- Akka
+
+## Results
+![](project2/pictures/Picture1.png)
+![](project2/pictures/Picture1.png)
