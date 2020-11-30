@@ -103,25 +103,40 @@ send, ,user2,123456, ,tweet7, , ,
 ```
 dotnet fsi --langversion:preview AkkaClient.fsx 125
 ```
+`result10.txt` is Performance test result under 10 users
 
 ## Test Measure
+All test result obtained from `.fs` file in Jetbrains Rider IDE.
 We test time cost of 3 measures, below N is the number of all users:
 - register N users
 - send 10 tweets for all users, and simulate a Zipf number of subscribes, and query tweets for every users
+- Zipf subscribe N users
+- query N users
+- query N hasgtag
+- query N mention
 - N random operations
 
 ## Result
 
 #### time cost in 3 different test scales
+All test result obtained from `.fs` file in Jetbrains Rider IDE.
 (milliseconds)
-| N    | Register  | Zipf Subscribe and send tweet | N Randon Ops |
-|------|-----------|-------------------------------|--------------|
-| 1    | 4.3481    | 76.409                        | 0.0595       |
-| 5    | 636.0403  | 310.83                        | 53.6972      |
-| 25   | 679.0285  | 2137.0041                     | 363.464      |
-| 125  | 942.4426  | 8878.189                      | 568.6302     |
-| 625  | 2220.7863 | 58481.078                     | 3725.794     |
-| 3125 | 8857.3967 | 355213                        | 25100.87     |
+
+- For N<400, we sent a tweet "tweet_content+useri_jth @user$ #topic$ " ($ means random)
+- For N>=400, we sent a tweet "t"
+
+| N    | Register  | N users each send 10 tweets | Zipf Subscribe | query N users |  query N hasgtag  |  query N mention | N Randon Ops |
+|------|-----------|-----------------------------|----------------|---------------|-------------------|------------------|--------------|
+| 5    | 599.6734  | 184.5998                    | 21.8749        | 51.1026       | 29.262            | 24.1199          | 51.5178      |
+| 10   | 659.8578  | 387.1673                    | 50.5391        | 103.9618      | 47.1174           | 56.1817          | 53.2401      |
+| 25   | 807.435   | 1191.5766                   | 128.7027       | 246.3215      | 128.7414          | 123.4499         | 171.5757     |
+| 50   | 769.0788  | 1691.3756                   | 467.9807       | 764.2445      | 493.4429          | 338.9445         | 219.0232     |
+| 100  | 1341.3728 | 3748.3057                   | 446.3389       | 930.0312      | 433.1106          | 449.2736         | 947.7343     |
+| 200  | 1232.6446 | 6565.2218                   | 865.9617       | 2279.6697     | 1400.8518         | 1336.9309        | 867.6679     |
+| 400  | 1486.0643 | 8704.6874                   | 1675.8635      | 1553.9948     | 1303.3077         | 741.304          | 1330.1301    |
+| 800  | 2510.7779 | 18426.727                   | 3333.8554      | 2343.8812     | 1452.3169         | 1437.4424        | 2010.4858    |
+| 1600 | 4214.8476 | 35609.2485                  | 7195.5841      | 4874.3492     | 2860.3245         | 2820.996         | 4934.7314    |
+| 3200 | 7642.8433 | 111190.343                  | 15425.6988     | 14089.3911    | 6775.7368         | 6146.9854        | 10698.6298   |
 
 ![](pictures/2.png)
 
@@ -131,14 +146,32 @@ We test time cost of 3 measures, below N is the number of all users:
 
 
 ## What is the largest network you managed to deal with
-the biggest number of users we tested is 3125
+the biggest number of users we tested is 3200
+
+We change some cinfiguration under this scenario, tweet content is only a single character "t".
+
+
+Result is as below
+```
+The time of register 3200 users is 7642.843300
+The time of send 10 tweets is 111190.342900
+The time of Zipf subscribe 3200 users is 15425.698800
+The time of query 3200 users is 14089.391100
+The time of query 3200 hasgtag is 6775.736800
+The time of query 3200 mention is 6146.985400
+The time of 3200 random operations is 10698.629800
+```
 
 ## Analysis
-The resigter is pretty fast, since it always cost `O(n)` time
+Send Tweet cost the most of time, since server will have to parse "@user" and "#topic", this will cost tons of server time. As a result, it's the most time-consuming operations
 
-When people start to subscribes many other people, the graph gets complicate. In this scenario, query tweets will be slow, it requires `O(n^2)` time
+Zipf Subscribe cost 2nd most time, since it requires total 2*N subscribes operations.
 
-For random operations, it is almost `O(n)` time
+Query cost the 3nd most time, since it consists of tons of string transmission. This will cost a lot of time.
+
+For other operations, it just need N operations, so they don't cost as much time as previous 3 operations.
+
+
 
 
 

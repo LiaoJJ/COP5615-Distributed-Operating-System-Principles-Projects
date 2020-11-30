@@ -88,7 +88,7 @@ let actor_client_simulator (mailbox: Actor<_>) =
             let mutable username = "user"+(string idx)
             let mutable password = "password" + (string idx)
             let mutable target_username = "user"+rand.Next(N) .ToString()
-            let mutable queryhashtag = "#user"+rand.Next(N) .ToString()
+            let mutable queryhashtag = "#topic"+rand.Next(N) .ToString()
             let mutable at = "@user"+rand.Next(N) .ToString()
             let mutable tweet_content = "tweet"+rand.Next(N) .ToString()+"... " + queryhashtag + "..." + at + " " 
             let mutable register = "register"
@@ -130,23 +130,37 @@ while i<N do
 while ii<N-1 do
     Thread.Sleep(50)
 stopWatch.Stop()
-printfn "The time of register %d users is %f" N stopWatch.Elapsed.TotalMilliseconds
-Thread.Sleep(5000)
+let time_register = stopWatch.Elapsed.TotalMilliseconds
+//    Thread.Sleep(5000)
+
+
+
 
 printfn "------------------------------------------------- \n " 
 printfn "-------------------------------------------------   " 
-printfn "Zipf Subscribe and send tweet...   " 
+printfn "send tweet...   " 
 printfn "-------------------------------------------------   "
 stopWatch = System.Diagnostics.Stopwatch.StartNew()
-let mutable step = 1
 for i in 0..N-1 do
     for j in 0..10 do
-        let cmd = "send, ,user"+(string i)+",password"+(string i)+", ,tweet+user"+(string i)+"_"+(string j)+"th , , , "
+        let cmd = "send, ,user"+(string i)+",password"+(string i)+", ,tweet+user"+(string i)+"_"+(string j)+"th @user"+(string (rand.Next(N)))+" #topic"+(string (rand.Next(N)))+" , , , "
+//            let cmd = "send, ,user"+(string i)+",password"+(string i)+", ,@user"+(string (rand.Next(N)))+" #topic"+(string (rand.Next(N)))+" , , , "
+//            let cmd = "send, ,user"+(string i)+",password"+(string i)+", ,t, , , "
         let task = echoServer <? cmd
         let response = Async.RunSynchronously (task, 3000)
         printfn "[command]%s" cmd
         printfn "[Reply]%s" (string(response))
         printfn "%s" ""
+stopWatch.Stop()
+let time_send = stopWatch.Elapsed.TotalMilliseconds
+
+
+
+
+
+let mutable step = 1
+stopWatch = System.Diagnostics.Stopwatch.StartNew()
+printfn "Zipf Subscribe ----------------------------------"  
 for i in 0..N-1 do
     for j in 0..step..N-1 do
         if not (j=i) then
@@ -156,17 +170,52 @@ for i in 0..N-1 do
             printfn "[command]%s" cmd
             printfn "[Reply]%s" (string(response))
             printfn "%s" ""
-            
+        step <- step+1
+stopWatch.Stop()
+let time_zipf_subscribe = stopWatch.Elapsed.TotalMilliseconds
+    
+
+
+stopWatch = System.Diagnostics.Stopwatch.StartNew()
+for i in 0..N-1 do
     let cmd = "querying, ,user"+(string i)+",password"+(string i)+", , , , , "
+    let task = echoServer <? cmd
+    let response = Async.RunSynchronously (task, 5000)
+    printfn "[command]%s" cmd
+    printfn "[Reply]%s" (string(response))
+    printfn "%s" ""
+stopWatch.Stop()
+let time_query = stopWatch.Elapsed.TotalMilliseconds
+
+
+
+stopWatch = System.Diagnostics.Stopwatch.StartNew()
+for i in 0..N-1 do
+    let cmd = "#, , , , , ,#topic"+(string (rand.Next(N)))+", ,"
     let task = echoServer <? cmd
     let response = Async.RunSynchronously (task, 3000)
     printfn "[command]%s" cmd
     printfn "[Reply]%s" (string(response))
     printfn "%s" ""
-    step <- step+1
 stopWatch.Stop()
-printfn "The time of Zipf subscribe and send tweets %d users is %f" N stopWatch.Elapsed.TotalMilliseconds
-Thread.Sleep(5000)
+let time_hashtag = stopWatch.Elapsed.TotalMilliseconds
+
+
+
+
+stopWatch = System.Diagnostics.Stopwatch.StartNew()
+for i in 0..N-1 do
+    let cmd = "@, , , , , , ,@user"+(string (rand.Next(N)))+","
+    let task = echoServer <? cmd
+    let response = Async.RunSynchronously (task, 3000)
+    printfn "[command]%s" cmd
+    printfn "[Reply]%s" (string(response))
+    printfn "%s" ""
+stopWatch.Stop()
+let time_mention = stopWatch.Elapsed.TotalMilliseconds
+
+
+
 
 printfn "------------------------------------------------- \n " 
 printfn "-------------------------------------------------   " 
@@ -181,7 +230,19 @@ while i<M do
 while ii<M-1 do
     Thread.Sleep(50)
 stopWatch.Stop()
-printfn "The time of %d random operations is %f" M stopWatch.Elapsed.TotalMilliseconds
+let time_random = stopWatch.Elapsed.TotalMilliseconds
+
+
+printfn "The time of register %d users is %f" N time_register
+printfn "The time of send 10 tweets is %f" time_send
+printfn "The time of Zipf subscribe %d users is %f" N time_zipf_subscribe
+printfn "The time of query %d users is %f" N time_query
+printfn "The time of query %d hasgtag is %f" N time_hashtag
+printfn "The time of query %d mention is %f" N time_mention
+printfn "The time of %d random operations is %f" M time_random
+
+printfn "Total Result: %f %f %f %f %f %f %f" time_register time_send time_zipf_subscribe time_query time_hashtag time_mention time_random
+
 
 system.Terminate() |> ignore
 0 // return an integer exit code

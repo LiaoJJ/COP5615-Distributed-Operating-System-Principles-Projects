@@ -44,6 +44,7 @@ type Tweet(tweet_id:string, text:string, is_re_tweet:bool) =
         res <- sprintf "[retweet][%s]%s" this.tweet_id this.text
       else
         res <- sprintf "[%s]%s" this.tweet_id this.text
+//        res <- sprintf "%s" this.text
       res
 
 //let tweet1 = new Tweet("1", "tweet1", false)
