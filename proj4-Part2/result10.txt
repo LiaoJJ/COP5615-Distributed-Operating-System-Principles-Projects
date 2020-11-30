@@ -1,0 +1,1301 @@
+/Library/Frameworks/Mono.framework/Versions/6.12.0/bin/mono-sgen64 "/Users/ljj/Documents/Courses/0 courses/DOSP/projects/proj4-Part2/Rider_project/HTTPClientPerformanceTest/HTTPClientPerformanceTest/bin/Debug/HTTPClientPerformanceTest.exe"
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0001][EventStream] subscribing [akka://all-systems/] to channel Akka.Event.Debug
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0001][EventStream] subscribing [akka://all-systems/] to channel Akka.Event.Info
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0001][EventStream] subscribing [akka://all-systems/] to channel Akka.Event.Warning
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0001][EventStream] subscribing [akka://all-systems/] to channel Akka.Event.Error
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0001][EventStream] StandardOutLogger started
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0004][akka://RemoteFSharp/] Started (Akka.Actor.GuardianActor)
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0005][akka://RemoteFSharp/user] Started (Akka.Actor.GuardianActor)
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0004][akka://RemoteFSharp/] now supervising akka://RemoteFSharp/user
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0006][akka://RemoteFSharp/] now supervising akka://RemoteFSharp/system
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0005][akka://RemoteFSharp/system] Started (Akka.Actor.SystemGuardianActor)
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0007][akka://RemoteFSharp/user] now watched by [akka://RemoteFSharp/system]
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0005][akka://RemoteFSharp/system] now watched by [akka://RemoteFSharp/]
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0006][akka://RemoteFSharp/system] now supervising akka://RemoteFSharp/system/log1-DefaultLogger
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0006][akka://RemoteFSharp/system/log1-DefaultLogger] Started (Akka.Event.DefaultLogger)
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0001][EventStream] subscribing [akka://RemoteFSharp/system/log1-DefaultLogger#224301315] to channel Akka.Event.Error
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0001][EventStream(RemoteFSharp)] Logger log1-DefaultLogger [DefaultLogger] started
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0006][akka://RemoteFSharp/system] now supervising akka://RemoteFSharp/system/UnhandledMessageForwarder
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0001][EventStream] subscribing [akka://RemoteFSharp/system/UnhandledMessageForwarder#982177082] to channel Akka.Event.UnhandledMessage
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0001][EventStream(RemoteFSharp)] StandardOutLogger being removed
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0004][akka://RemoteFSharp/system/UnhandledMessageForwarder] Started (Akka.Event.LoggingBus+UnhandledMessageForwarder)
+[DEBUG][11/30/2020 8:35:48 AM][Thread 0001][EventStream] unsubscribing [akka://all-systems/] from all channels
+[||]
+------------------------------------------------- 
+ 
+-------------------------------------------------   
+Register Account...   
+-------------------------------------------------   
+[command]reg, ,user0,password0, , , , , 
+[Reply]Text "Register success username: user0  password: password0"
+
+[command]reg, ,user1,password1, , , , , 
+[Reply]Text "Register success username: user1  password: password1"
+
+[command]reg, ,user2,password2, , , , , 
+[Reply]Text "Register success username: user2  password: password2"
+
+[command]reg, ,user3,password3, , , , , 
+[Reply]Text "Register success username: user3  password: password3"
+
+[command]reg, ,user4,password4, , , , , 
+[Reply]Text "Register success username: user4  password: password4"
+
+[command]reg, ,user5,password5, , , , , 
+[Reply]Text "Register success username: user5  password: password5"
+
+[command]reg, ,user6,password6, , , , , 
+[Reply]Text "Register success username: user6  password: password6"
+
+[command]reg, ,user7,password7, , , , , 
+[Reply]Text "Register success username: user7  password: password7"
+
+[command]reg, ,user8,password8, , , , , 
+[Reply]Text "Register success username: user8  password: password8"
+
+[command]reg, ,user9,password9, , , , , 
+[Reply]Text "Register success username: user9  password: password9"
+
+------------------------------------------------- 
+ 
+-------------------------------------------------   
+send tweet...   
+-------------------------------------------------   
+[command]send, ,user0,password0, ,tweet+user0_0th @user2 #topic1 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989527038340]tweet+user0_0th @user2 #topic1 "
+
+[command]send, ,user0,password0, ,tweet+user0_1th @user4 #topic7 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989527552030]tweet+user0_1th @user4 #topic7 "
+
+[command]send, ,user0,password0, ,tweet+user0_2th @user6 #topic4 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989527959020]tweet+user0_2th @user6 #topic4 "
+
+[command]send, ,user0,password0, ,tweet+user0_3th @user3 #topic9 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989528323740]tweet+user0_3th @user3 #topic9 "
+
+[command]send, ,user0,password0, ,tweet+user0_4th @user1 #topic6 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989528629360]tweet+user0_4th @user1 #topic6 "
+
+[command]send, ,user0,password0, ,tweet+user0_5th @user0 #topic2 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989529122360]tweet+user0_5th @user0 #topic2 "
+
+[command]send, ,user0,password0, ,tweet+user0_6th @user3 #topic9 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989529420370]tweet+user0_6th @user3 #topic9 "
+
+[command]send, ,user0,password0, ,tweet+user0_7th @user6 #topic6 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989529832840]tweet+user0_7th @user6 #topic6 "
+
+[command]send, ,user0,password0, ,tweet+user0_8th @user2 #topic6 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989530160920]tweet+user0_8th @user2 #topic6 "
+
+[command]send, ,user0,password0, ,tweet+user0_9th @user7 #topic7 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989530635490]tweet+user0_9th @user7 #topic7 "
+
+[command]send, ,user0,password0, ,tweet+user0_10th @user9 #topic0 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989530954500]tweet+user0_10th @user9 #topic0 "
+
+[command]send, ,user1,password1, ,tweet+user1_0th @user1 #topic3 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989531376670]tweet+user1_0th @user1 #topic3 "
+
+[command]send, ,user1,password1, ,tweet+user1_1th @user7 #topic1 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989531729160]tweet+user1_1th @user7 #topic1 "
+
+[command]send, ,user1,password1, ,tweet+user1_2th @user7 #topic3 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989532036930]tweet+user1_2th @user7 #topic3 "
+
+[command]send, ,user1,password1, ,tweet+user1_3th @user8 #topic8 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989532419520]tweet+user1_3th @user8 #topic8 "
+
+[command]send, ,user1,password1, ,tweet+user1_4th @user5 #topic7 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989532717440]tweet+user1_4th @user5 #topic7 "
+
+[command]send, ,user1,password1, ,tweet+user1_5th @user6 #topic0 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989533095160]tweet+user1_5th @user6 #topic0 "
+
+[command]send, ,user1,password1, ,tweet+user1_6th @user9 #topic8 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989533399370]tweet+user1_6th @user9 #topic8 "
+
+[command]send, ,user1,password1, ,tweet+user1_7th @user8 #topic0 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989533774710]tweet+user1_7th @user8 #topic0 "
+
+[command]send, ,user1,password1, ,tweet+user1_8th @user5 #topic5 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989534111830]tweet+user1_8th @user5 #topic5 "
+
+[command]send, ,user1,password1, ,tweet+user1_9th @user2 #topic9 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989534414430]tweet+user1_9th @user2 #topic9 "
+
+[command]send, ,user1,password1, ,tweet+user1_10th @user6 #topic3 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989534816090]tweet+user1_10th @user6 #topic3 "
+
+[command]send, ,user2,password2, ,tweet+user2_0th @user4 #topic6 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989535108150]tweet+user2_0th @user4 #topic6 "
+
+[command]send, ,user2,password2, ,tweet+user2_1th @user6 #topic4 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989535544300]tweet+user2_1th @user6 #topic4 "
+
+[command]send, ,user2,password2, ,tweet+user2_2th @user2 #topic3 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989535948700]tweet+user2_2th @user2 #topic3 "
+
+[command]send, ,user2,password2, ,tweet+user2_3th @user5 #topic1 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989536292340]tweet+user2_3th @user5 #topic1 "
+
+[command]send, ,user2,password2, ,tweet+user2_4th @user3 #topic6 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989536597810]tweet+user2_4th @user3 #topic6 "
+
+[command]send, ,user2,password2, ,tweet+user2_5th @user3 #topic1 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989536986740]tweet+user2_5th @user3 #topic1 "
+
+[command]send, ,user2,password2, ,tweet+user2_6th @user9 #topic0 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989537301090]tweet+user2_6th @user9 #topic0 "
+
+[command]send, ,user2,password2, ,tweet+user2_7th @user9 #topic4 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989537688260]tweet+user2_7th @user9 #topic4 "
+
+[command]send, ,user2,password2, ,tweet+user2_8th @user6 #topic0 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989538027650]tweet+user2_8th @user6 #topic0 "
+
+[command]send, ,user2,password2, ,tweet+user2_9th @user1 #topic2 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989538354100]tweet+user2_9th @user1 #topic2 "
+
+[command]send, ,user2,password2, ,tweet+user2_10th @user0 #topic3 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989538700650]tweet+user2_10th @user0 #topic3 "
+
+[command]send, ,user3,password3, ,tweet+user3_0th @user5 #topic3 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989539129000]tweet+user3_0th @user5 #topic3 "
+
+[command]send, ,user3,password3, ,tweet+user3_1th @user9 #topic8 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989539494810]tweet+user3_1th @user9 #topic8 "
+
+[command]send, ,user3,password3, ,tweet+user3_2th @user7 #topic2 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989539858570]tweet+user3_2th @user7 #topic2 "
+
+[command]send, ,user3,password3, ,tweet+user3_3th @user1 #topic1 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989540154980]tweet+user3_3th @user1 #topic1 "
+
+[command]send, ,user3,password3, ,tweet+user3_4th @user4 #topic9 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989540607850]tweet+user3_4th @user4 #topic9 "
+
+[command]send, ,user3,password3, ,tweet+user3_5th @user4 #topic7 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989540973880]tweet+user3_5th @user4 #topic7 "
+
+[command]send, ,user3,password3, ,tweet+user3_6th @user9 #topic1 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989541288970]tweet+user3_6th @user9 #topic1 "
+
+[command]send, ,user3,password3, ,tweet+user3_7th @user4 #topic3 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989541720260]tweet+user3_7th @user4 #topic3 "
+
+[command]send, ,user3,password3, ,tweet+user3_8th @user0 #topic4 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989542101940]tweet+user3_8th @user0 #topic4 "
+
+[command]send, ,user3,password3, ,tweet+user3_9th @user3 #topic3 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989542437260]tweet+user3_9th @user3 #topic3 "
+
+[command]send, ,user3,password3, ,tweet+user3_10th @user3 #topic0 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989542702600]tweet+user3_10th @user3 #topic0 "
+
+[command]send, ,user4,password4, ,tweet+user4_0th @user6 #topic8 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989543111230]tweet+user4_0th @user6 #topic8 "
+
+[command]send, ,user4,password4, ,tweet+user4_1th @user8 #topic7 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989543410200]tweet+user4_1th @user8 #topic7 "
+
+[command]send, ,user4,password4, ,tweet+user4_2th @user0 #topic0 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989543808340]tweet+user4_2th @user0 #topic0 "
+
+[command]send, ,user4,password4, ,tweet+user4_3th @user8 #topic2 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989544101440]tweet+user4_3th @user8 #topic2 "
+
+[command]send, ,user4,password4, ,tweet+user4_4th @user8 #topic4 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989544524380]tweet+user4_4th @user8 #topic4 "
+
+[command]send, ,user4,password4, ,tweet+user4_5th @user3 #topic1 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989544867420]tweet+user4_5th @user3 #topic1 "
+
+[command]send, ,user4,password4, ,tweet+user4_6th @user1 #topic3 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989545143050]tweet+user4_6th @user1 #topic3 "
+
+[command]send, ,user4,password4, ,tweet+user4_7th @user4 #topic3 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989545677300]tweet+user4_7th @user4 #topic3 "
+
+[command]send, ,user4,password4, ,tweet+user4_8th @user5 #topic3 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989546070490]tweet+user4_8th @user5 #topic3 "
+
+[command]send, ,user4,password4, ,tweet+user4_9th @user0 #topic1 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989546390710]tweet+user4_9th @user0 #topic1 "
+
+[command]send, ,user4,password4, ,tweet+user4_10th @user2 #topic4 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989546781420]tweet+user4_10th @user2 #topic4 "
+
+[command]send, ,user5,password5, ,tweet+user5_0th @user7 #topic1 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989547112220]tweet+user5_0th @user7 #topic1 "
+
+[command]send, ,user5,password5, ,tweet+user5_1th @user1 #topic8 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989547602700]tweet+user5_1th @user1 #topic8 "
+
+[command]send, ,user5,password5, ,tweet+user5_2th @user9 #topic3 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989547918490]tweet+user5_2th @user9 #topic3 "
+
+[command]send, ,user5,password5, ,tweet+user5_3th @user9 #topic6 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989548317800]tweet+user5_3th @user9 #topic6 "
+
+[command]send, ,user5,password5, ,tweet+user5_4th @user8 #topic6 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989548680370]tweet+user5_4th @user8 #topic6 "
+
+[command]send, ,user5,password5, ,tweet+user5_5th @user9 #topic5 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989549008820]tweet+user5_5th @user9 #topic5 "
+
+[command]send, ,user5,password5, ,tweet+user5_6th @user6 #topic1 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989549329650]tweet+user5_6th @user6 #topic1 "
+
+[command]send, ,user5,password5, ,tweet+user5_7th @user0 #topic0 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989549703150]tweet+user5_7th @user0 #topic0 "
+
+[command]send, ,user5,password5, ,tweet+user5_8th @user1 #topic0 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989550068800]tweet+user5_8th @user1 #topic0 "
+
+[command]send, ,user5,password5, ,tweet+user5_9th @user2 #topic2 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989550434080]tweet+user5_9th @user2 #topic2 "
+
+[command]send, ,user5,password5, ,tweet+user5_10th @user0 #topic9 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989550838200]tweet+user5_10th @user0 #topic9 "
+
+[command]send, ,user6,password6, ,tweet+user6_0th @user4 #topic8 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989551210480]tweet+user6_0th @user4 #topic8 "
+
+[command]send, ,user6,password6, ,tweet+user6_1th @user9 #topic1 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989551593530]tweet+user6_1th @user9 #topic1 "
+
+[command]send, ,user6,password6, ,tweet+user6_2th @user8 #topic6 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989551978510]tweet+user6_2th @user8 #topic6 "
+
+[command]send, ,user6,password6, ,tweet+user6_3th @user9 #topic0 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989552361600]tweet+user6_3th @user9 #topic0 "
+
+[command]send, ,user6,password6, ,tweet+user6_4th @user3 #topic2 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989552657510]tweet+user6_4th @user3 #topic2 "
+
+[command]send, ,user6,password6, ,tweet+user6_5th @user7 #topic1 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989553111350]tweet+user6_5th @user7 #topic1 "
+
+[command]send, ,user6,password6, ,tweet+user6_6th @user0 #topic6 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989553477250]tweet+user6_6th @user0 #topic6 "
+
+[command]send, ,user6,password6, ,tweet+user6_7th @user6 #topic2 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989553829060]tweet+user6_7th @user6 #topic2 "
+
+[command]send, ,user6,password6, ,tweet+user6_8th @user0 #topic5 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989554203770]tweet+user6_8th @user0 #topic5 "
+
+[command]send, ,user6,password6, ,tweet+user6_9th @user2 #topic2 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989554550700]tweet+user6_9th @user2 #topic2 "
+
+[command]send, ,user6,password6, ,tweet+user6_10th @user6 #topic6 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989554963910]tweet+user6_10th @user6 #topic6 "
+
+[command]send, ,user7,password7, ,tweet+user7_0th @user1 #topic5 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989555286440]tweet+user7_0th @user1 #topic5 "
+
+[command]send, ,user7,password7, ,tweet+user7_1th @user6 #topic3 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989555747730]tweet+user7_1th @user6 #topic3 "
+
+[command]send, ,user7,password7, ,tweet+user7_2th @user3 #topic5 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989556055980]tweet+user7_2th @user3 #topic5 "
+
+[command]send, ,user7,password7, ,tweet+user7_3th @user1 #topic9 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989556480440]tweet+user7_3th @user1 #topic9 "
+
+[command]send, ,user7,password7, ,tweet+user7_4th @user8 #topic0 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989556759340]tweet+user7_4th @user8 #topic0 "
+
+[command]send, ,user7,password7, ,tweet+user7_5th @user3 #topic8 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989557163540]tweet+user7_5th @user3 #topic8 "
+
+[command]send, ,user7,password7, ,tweet+user7_6th @user7 #topic3 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989557434230]tweet+user7_6th @user7 #topic3 "
+
+[command]send, ,user7,password7, ,tweet+user7_7th @user8 #topic8 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989557832100]tweet+user7_7th @user8 #topic8 "
+
+[command]send, ,user7,password7, ,tweet+user7_8th @user4 #topic2 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989558138940]tweet+user7_8th @user4 #topic2 "
+
+[command]send, ,user7,password7, ,tweet+user7_9th @user7 #topic8 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989558564290]tweet+user7_9th @user7 #topic8 "
+
+[command]send, ,user7,password7, ,tweet+user7_10th @user3 #topic7 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989558908570]tweet+user7_10th @user3 #topic7 "
+
+[command]send, ,user8,password8, ,tweet+user8_0th @user7 #topic5 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989559209450]tweet+user8_0th @user7 #topic5 "
+
+[command]send, ,user8,password8, ,tweet+user8_1th @user0 #topic3 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989559664540]tweet+user8_1th @user0 #topic3 "
+
+[command]send, ,user8,password8, ,tweet+user8_2th @user3 #topic8 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989559985950]tweet+user8_2th @user3 #topic8 "
+
+[command]send, ,user8,password8, ,tweet+user8_3th @user0 #topic7 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989560434090]tweet+user8_3th @user0 #topic7 "
+
+[command]send, ,user8,password8, ,tweet+user8_4th @user9 #topic8 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989560779310]tweet+user8_4th @user9 #topic8 "
+
+[command]send, ,user8,password8, ,tweet+user8_5th @user3 #topic8 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989561127000]tweet+user8_5th @user3 #topic8 "
+
+[command]send, ,user8,password8, ,tweet+user8_6th @user6 #topic4 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989561428240]tweet+user8_6th @user6 #topic4 "
+
+[command]send, ,user8,password8, ,tweet+user8_7th @user4 #topic5 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989561807490]tweet+user8_7th @user4 #topic5 "
+
+[command]send, ,user8,password8, ,tweet+user8_8th @user3 #topic3 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989562101880]tweet+user8_8th @user3 #topic3 "
+
+[command]send, ,user8,password8, ,tweet+user8_9th @user8 #topic3 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989562481590]tweet+user8_9th @user8 #topic3 "
+
+[command]send, ,user8,password8, ,tweet+user8_10th @user3 #topic6 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989562794550]tweet+user8_10th @user3 #topic6 "
+
+[command]send, ,user9,password9, ,tweet+user9_0th @user8 #topic2 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989563177800]tweet+user9_0th @user8 #topic2 "
+
+[command]send, ,user9,password9, ,tweet+user9_1th @user9 #topic3 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989563504120]tweet+user9_1th @user9 #topic3 "
+
+[command]send, ,user9,password9, ,tweet+user9_2th @user3 #topic1 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989563880400]tweet+user9_2th @user3 #topic1 "
+
+[command]send, ,user9,password9, ,tweet+user9_3th @user0 #topic9 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989564226220]tweet+user9_3th @user0 #topic9 "
+
+[command]send, ,user9,password9, ,tweet+user9_4th @user4 #topic8 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989564524230]tweet+user9_4th @user4 #topic8 "
+
+[command]send, ,user9,password9, ,tweet+user9_5th @user2 #topic4 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989564944670]tweet+user9_5th @user2 #topic4 "
+
+[command]send, ,user9,password9, ,tweet+user9_6th @user7 #topic1 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989565262230]tweet+user9_6th @user7 #topic1 "
+
+[command]send, ,user9,password9, ,tweet+user9_7th @user2 #topic0 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989565558610]tweet+user9_7th @user2 #topic0 "
+
+[command]send, ,user9,password9, ,tweet+user9_8th @user1 #topic2 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989565965830]tweet+user9_8th @user1 #topic2 "
+
+[command]send, ,user9,password9, ,tweet+user9_9th @user9 #topic1 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989566259720]tweet+user9_9th @user9 #topic1 "
+
+[command]send, ,user9,password9, ,tweet+user9_10th @user0 #topic4 , , , 
+[Reply]Text
+  "[success] sent twitter: [132511989566701810]tweet+user9_10th @user0 #topic4 "
+
+Zipf Subscribe ----------------------------------
+[command]subscribe, ,user1,password1,user0, , , , 
+[Reply]Text "[success] user1 subscribe user0"
+
+[command]subscribe, ,user2,password2,user0, , , , 
+[Reply]Text "[success] user2 subscribe user0"
+
+[command]subscribe, ,user3,password3,user0, , , , 
+[Reply]Text "[success] user3 subscribe user0"
+
+[command]subscribe, ,user4,password4,user0, , , , 
+[Reply]Text "[success] user4 subscribe user0"
+
+[command]subscribe, ,user5,password5,user0, , , , 
+[Reply]Text "[success] user5 subscribe user0"
+
+[command]subscribe, ,user6,password6,user0, , , , 
+[Reply]Text "[success] user6 subscribe user0"
+
+[command]subscribe, ,user7,password7,user0, , , , 
+[Reply]Text "[success] user7 subscribe user0"
+
+[command]subscribe, ,user8,password8,user0, , , , 
+[Reply]Text "[success] user8 subscribe user0"
+
+[command]subscribe, ,user9,password9,user0, , , , 
+[Reply]Text "[success] user9 subscribe user0"
+
+[command]subscribe, ,user0,password0,user1, , , , 
+[Reply]Text "[success] user0 subscribe user1"
+
+[command]subscribe, ,user0,password0,user2, , , , 
+[Reply]Text "[success] user0 subscribe user2"
+
+[command]subscribe, ,user0,password0,user3, , , , 
+[Reply]Text "[success] user0 subscribe user3"
+
+[command]subscribe, ,user0,password0,user4, , , , 
+[Reply]Text "[success] user0 subscribe user4"
+
+[command]subscribe, ,user0,password0,user5, , , , 
+[Reply]Text "[success] user0 subscribe user5"
+
+[command]subscribe, ,user0,password0,user6, , , , 
+[Reply]Text "[success] user0 subscribe user6"
+
+[command]subscribe, ,user0,password0,user7, , , , 
+[Reply]Text "[success] user0 subscribe user7"
+
+[command]subscribe, ,user0,password0,user8, , , , 
+[Reply]Text "[success] user0 subscribe user8"
+
+[command]subscribe, ,user0,password0,user9, , , , 
+[Reply]Text "[success] user0 subscribe user9"
+
+[command]querying, ,user0,password0, , , , , 
+[Reply]Text
+  "[success] queryTweetsSubscribed
+[132511989527038340]tweet+user0_0th @user2 #topic1 
+[132511989527552030]tweet+user0_1th @user4 #topic7 
+[132511989527959020]tweet+user0_2th @user6 #topic4 
+[132511989528323740]tweet+user0_3th @user3 #topic9 
+[132511989528629360]tweet+user0_4th @user1 #topic6 
+[132511989529122360]tweet+user0_5th @user0 #topic2 
+[132511989529420370]tweet+user0_6th @user3 #topic9 
+[132511989529832840]tweet+user0_7th @user6 #topic6 
+[132511989530160920]tweet+user0_8th @user2 #topic6 
+[132511989530635490]tweet+user0_9th @user7 #topic7 
+[132511989530954500]tweet+user0_10th @user9 #topic0 
+[132511989531376670]tweet+user1_0th @user1 #topic3 
+[132511989531729160]tweet+user1_1th @user7 #topic1 
+[132511989532036930]tweet+user1_2th @user7 #topic3 
+[132511989532419520]tweet+user1_3th @user8 #topic8 
+[132511989532717440]tweet+user1_4th @user5 #topic7 
+[132511989533095160]tweet+user1_5th @user6 #topic0 
+[132511989533399370]tweet+user1_6th @user9 #topic8 
+[132511989533774710]tweet+user1_7th @user8 #topic0 
+[132511989534111830]tweet+user1_8th @user5 #topic5 
+[132511989534414430]tweet+user1_9th @user2 #topic9 
+[132511989534816090]tweet+user1_10th @user6 #topic3 
+[132511989535108150]tweet+user2_0th @user4 #topic6 
+[132511989535544300]tweet+user2_1th @user6 #topic4 
+[132511989535948700]tweet+user2_2th @user2 #topic3 
+[132511989536292340]tweet+user2_3th @user5 #topic1 
+[132511989536597810]tweet+user2_4th @user3 #topic6 
+[132511989536986740]tweet+user2_5th @user3 #topic1 
+[132511989537301090]tweet+user2_6th @user9 #topic0 
+[132511989537688260]tweet+user2_7th @user9 #topic4 
+[132511989538027650]tweet+user2_8th @user6 #topic0 
+[132511989538354100]tweet+user2_9th @user1 #topic2 
+[132511989538700650]tweet+user2_10th @user0 #topic3 
+[132511989539129000]tweet+user3_0th @user5 #topic3 
+[132511989539494810]tweet+user3_1th @user9 #topic8 
+[132511989539858570]tweet+user3_2th @user7 #topic2 
+[132511989540154980]tweet+user3_3th @user1 #topic1 
+[132511989540607850]tweet+user3_4th @user4 #topic9 
+[132511989540973880]tweet+user3_5th @user4 #topic7 
+[132511989541288970]tweet+user3_6th @user9 #topic1 
+[132511989541720260]tweet+user3_7th @user4 #topic3 
+[132511989542101940]tweet+user3_8th @user0 #topic4 
+[132511989542437260]tweet+user3_9th @user3 #topic3 
+[132511989542702600]tweet+user3_10th @user3 #topic0 
+[132511989543111230]tweet+user4_0th @user6 #topic8 
+[132511989543410200]tweet+user4_1th @user8 #topic7 
+[132511989543808340]tweet+user4_2th @user0 #topic0 
+[132511989544101440]tweet+user4_3th @user8 #topic2 
+[132511989544524380]tweet+user4_4th @user8 #topic4 
+[132511989544867420]tweet+user4_5th @user3 #topic1 
+[132511989545143050]tweet+user4_6th @user1 #topic3 
+[132511989545677300]tweet+user4_7th @user4 #topic3 
+[132511989546070490]tweet+user4_8th @user5 #topic3 
+[132511989546390710]tweet+user4_9th @user0 #topic1 
+[132511989546781420]tweet+user4_10th @user2 #topic4 
+[132511989547112220]tweet+user5_0th @user7 #topic1 
+[132511989547602700]tweet+user5_1th @user1 #topic8 
+[132511989547918490]tweet+user5_2th @user9 #topic3 
+[132511989548317800]tweet+user5_3th @user9 #topic6 
+[132511989548680370]tweet+user5_4th @user8 #topic6 
+[132511989549008820]tweet+user5_5th @user9 #topic5 
+[132511989549329650]tweet+user5_6th @user6 #topic1 
+[132511989549703150]tweet+user5_7th @user0 #topic0 
+[132511989550068800]tweet+user5_8th @user1 #topic0 
+[132511989550434080]tweet+user5_9th @user2 #topic2 
+[132511989550838200]tweet+user5_10th @user0 #topic9 
+[132511989551210480]tweet+user6_0th @user4 #topic8 
+[132511989551593530]tweet+user6_1th @user9 #topic1 
+[132511989551978510]tweet+user6_2th @user8 #topic6 
+[132511989552361600]tweet+user6_3th @user9 #topic0 
+[132511989552657510]tweet+user6_4th @user3 #topic2 
+[132511989553111350]tweet+user6_5th @user7 #topic1 
+[132511989553477250]tweet+user6_6th @user0 #topic6 
+[132511989553829060]tweet+user6_7th @user6 #topic2 
+[132511989554203770]tweet+user6_8th @user0 #topic5 
+[132511989554550700]tweet+user6_9th @user2 #topic2 
+[132511989554963910]tweet+user6_10th @user6 #topic6 
+[132511989555286440]tweet+user7_0th @user1 #topic5 
+[132511989555747730]tweet+user7_1th @user6 #topic3 
+[132511989556055980]tweet+user7_2th @user3 #topic5 
+[132511989556480440]tweet+user7_3th @user1 #topic9 
+[132511989556759340]tweet+user7_4th @user8 #topic0 
+[132511989557163540]tweet+user7_5th @user3 #topic8 
+[132511989557434230]tweet+user7_6th @user7 #topic3 
+[132511989557832100]tweet+user7_7th @user8 #topic8 
+[132511989558138940]tweet+user7_8th @user4 #topic2 
+[132511989558564290]tweet+user7_9th @user7 #topic8 
+[132511989558908570]tweet+user7_10th @user3 #topic7 
+[132511989559209450]tweet+user8_0th @user7 #topic5 
+[132511989559664540]tweet+user8_1th @user0 #topic3 
+[132511989559985950]tweet+user8_2th @user3 #topic8 
+[132511989560434090]tweet+user8_3th @user0 #topic7 
+[132511989560779310]tweet+user8_4th @user9 #topic8 
+[132511989561127000]tweet+user8_5th @user3 #topic8 
+[132511989561428240]tweet+user8_6th @user6 #topic4 
+[132511989561807490]tweet+user8_7th @user4 #topic5 
+[132511989562101880]tweet+user8_8th @user3 #topic3 
+[132511989562481590]tweet+user8_9th @user8 #topic3 
+[132511989562794550]tweet+user8_10th @user3 #topic6 
+[132511989563177800]tweet+user9_0th @user8 #topic2 
+[132511989563504120]tweet+user9_1th @user9 #topic3 
+[132511989563880400]tweet+user9_2th @user3 #topic1 
+[132511989564226220]tweet+user9_3th @user0 #topic9 
+[132511989564524230]tweet+user9_4th @user4 #topic8 
+[132511989564944670]tweet+user9_5th @user2 #topic4 
+[132511989565262230]tweet+user9_6th @user7 #topic1 
+[132511989565558610]tweet+user9_7th @user2 #topic0 
+[132511989565965830]tweet+user9_8th @user1 #topic2 
+[132511989566259720]tweet+user9_9th @user9 #topic1 
+[132511989566701810]tweet+user9_10th @user0 #topic4 "
+
+[command]querying, ,user1,password1, , , , , 
+[Reply]Text
+  "[success] queryTweetsSubscribed
+[132511989531376670]tweet+user1_0th @user1 #topic3 
+[132511989531729160]tweet+user1_1th @user7 #topic1 
+[132511989532036930]tweet+user1_2th @user7 #topic3 
+[132511989532419520]tweet+user1_3th @user8 #topic8 
+[132511989532717440]tweet+user1_4th @user5 #topic7 
+[132511989533095160]tweet+user1_5th @user6 #topic0 
+[132511989533399370]tweet+user1_6th @user9 #topic8 
+[132511989533774710]tweet+user1_7th @user8 #topic0 
+[132511989534111830]tweet+user1_8th @user5 #topic5 
+[132511989534414430]tweet+user1_9th @user2 #topic9 
+[132511989534816090]tweet+user1_10th @user6 #topic3 
+[132511989527038340]tweet+user0_0th @user2 #topic1 
+[132511989527552030]tweet+user0_1th @user4 #topic7 
+[132511989527959020]tweet+user0_2th @user6 #topic4 
+[132511989528323740]tweet+user0_3th @user3 #topic9 
+[132511989528629360]tweet+user0_4th @user1 #topic6 
+[132511989529122360]tweet+user0_5th @user0 #topic2 
+[132511989529420370]tweet+user0_6th @user3 #topic9 
+[132511989529832840]tweet+user0_7th @user6 #topic6 
+[132511989530160920]tweet+user0_8th @user2 #topic6 
+[132511989530635490]tweet+user0_9th @user7 #topic7 
+[132511989530954500]tweet+user0_10th @user9 #topic0 "
+
+[command]querying, ,user2,password2, , , , , 
+[Reply]Text
+  "[success] queryTweetsSubscribed
+[132511989535108150]tweet+user2_0th @user4 #topic6 
+[132511989535544300]tweet+user2_1th @user6 #topic4 
+[132511989535948700]tweet+user2_2th @user2 #topic3 
+[132511989536292340]tweet+user2_3th @user5 #topic1 
+[132511989536597810]tweet+user2_4th @user3 #topic6 
+[132511989536986740]tweet+user2_5th @user3 #topic1 
+[132511989537301090]tweet+user2_6th @user9 #topic0 
+[132511989537688260]tweet+user2_7th @user9 #topic4 
+[132511989538027650]tweet+user2_8th @user6 #topic0 
+[132511989538354100]tweet+user2_9th @user1 #topic2 
+[132511989538700650]tweet+user2_10th @user0 #topic3 
+[132511989527038340]tweet+user0_0th @user2 #topic1 
+[132511989527552030]tweet+user0_1th @user4 #topic7 
+[132511989527959020]tweet+user0_2th @user6 #topic4 
+[132511989528323740]tweet+user0_3th @user3 #topic9 
+[132511989528629360]tweet+user0_4th @user1 #topic6 
+[132511989529122360]tweet+user0_5th @user0 #topic2 
+[132511989529420370]tweet+user0_6th @user3 #topic9 
+[132511989529832840]tweet+user0_7th @user6 #topic6 
+[132511989530160920]tweet+user0_8th @user2 #topic6 
+[132511989530635490]tweet+user0_9th @user7 #topic7 
+[132511989530954500]tweet+user0_10th @user9 #topic0 "
+
+[command]querying, ,user3,password3, , , , , 
+[Reply]Text
+  "[success] queryTweetsSubscribed
+[132511989539129000]tweet+user3_0th @user5 #topic3 
+[132511989539494810]tweet+user3_1th @user9 #topic8 
+[132511989539858570]tweet+user3_2th @user7 #topic2 
+[132511989540154980]tweet+user3_3th @user1 #topic1 
+[132511989540607850]tweet+user3_4th @user4 #topic9 
+[132511989540973880]tweet+user3_5th @user4 #topic7 
+[132511989541288970]tweet+user3_6th @user9 #topic1 
+[132511989541720260]tweet+user3_7th @user4 #topic3 
+[132511989542101940]tweet+user3_8th @user0 #topic4 
+[132511989542437260]tweet+user3_9th @user3 #topic3 
+[132511989542702600]tweet+user3_10th @user3 #topic0 
+[132511989527038340]tweet+user0_0th @user2 #topic1 
+[132511989527552030]tweet+user0_1th @user4 #topic7 
+[132511989527959020]tweet+user0_2th @user6 #topic4 
+[132511989528323740]tweet+user0_3th @user3 #topic9 
+[132511989528629360]tweet+user0_4th @user1 #topic6 
+[132511989529122360]tweet+user0_5th @user0 #topic2 
+[132511989529420370]tweet+user0_6th @user3 #topic9 
+[132511989529832840]tweet+user0_7th @user6 #topic6 
+[132511989530160920]tweet+user0_8th @user2 #topic6 
+[132511989530635490]tweet+user0_9th @user7 #topic7 
+[132511989530954500]tweet+user0_10th @user9 #topic0 "
+
+[command]querying, ,user4,password4, , , , , 
+[Reply]Text
+  "[success] queryTweetsSubscribed
+[132511989543111230]tweet+user4_0th @user6 #topic8 
+[132511989543410200]tweet+user4_1th @user8 #topic7 
+[132511989543808340]tweet+user4_2th @user0 #topic0 
+[132511989544101440]tweet+user4_3th @user8 #topic2 
+[132511989544524380]tweet+user4_4th @user8 #topic4 
+[132511989544867420]tweet+user4_5th @user3 #topic1 
+[132511989545143050]tweet+user4_6th @user1 #topic3 
+[132511989545677300]tweet+user4_7th @user4 #topic3 
+[132511989546070490]tweet+user4_8th @user5 #topic3 
+[132511989546390710]tweet+user4_9th @user0 #topic1 
+[132511989546781420]tweet+user4_10th @user2 #topic4 
+[132511989527038340]tweet+user0_0th @user2 #topic1 
+[132511989527552030]tweet+user0_1th @user4 #topic7 
+[132511989527959020]tweet+user0_2th @user6 #topic4 
+[132511989528323740]tweet+user0_3th @user3 #topic9 
+[132511989528629360]tweet+user0_4th @user1 #topic6 
+[132511989529122360]tweet+user0_5th @user0 #topic2 
+[132511989529420370]tweet+user0_6th @user3 #topic9 
+[132511989529832840]tweet+user0_7th @user6 #topic6 
+[132511989530160920]tweet+user0_8th @user2 #topic6 
+[132511989530635490]tweet+user0_9th @user7 #topic7 
+[132511989530954500]tweet+user0_10th @user9 #topic0 "
+
+[command]querying, ,user5,password5, , , , , 
+[Reply]Text
+  "[success] queryTweetsSubscribed
+[132511989547112220]tweet+user5_0th @user7 #topic1 
+[132511989547602700]tweet+user5_1th @user1 #topic8 
+[132511989547918490]tweet+user5_2th @user9 #topic3 
+[132511989548317800]tweet+user5_3th @user9 #topic6 
+[132511989548680370]tweet+user5_4th @user8 #topic6 
+[132511989549008820]tweet+user5_5th @user9 #topic5 
+[132511989549329650]tweet+user5_6th @user6 #topic1 
+[132511989549703150]tweet+user5_7th @user0 #topic0 
+[132511989550068800]tweet+user5_8th @user1 #topic0 
+[132511989550434080]tweet+user5_9th @user2 #topic2 
+[132511989550838200]tweet+user5_10th @user0 #topic9 
+[132511989527038340]tweet+user0_0th @user2 #topic1 
+[132511989527552030]tweet+user0_1th @user4 #topic7 
+[132511989527959020]tweet+user0_2th @user6 #topic4 
+[132511989528323740]tweet+user0_3th @user3 #topic9 
+[132511989528629360]tweet+user0_4th @user1 #topic6 
+[132511989529122360]tweet+user0_5th @user0 #topic2 
+[132511989529420370]tweet+user0_6th @user3 #topic9 
+[132511989529832840]tweet+user0_7th @user6 #topic6 
+[132511989530160920]tweet+user0_8th @user2 #topic6 
+[132511989530635490]tweet+user0_9th @user7 #topic7 
+[132511989530954500]tweet+user0_10th @user9 #topic0 "
+
+[command]querying, ,user6,password6, , , , , 
+[Reply]Text
+  "[success] queryTweetsSubscribed
+[132511989551210480]tweet+user6_0th @user4 #topic8 
+[132511989551593530]tweet+user6_1th @user9 #topic1 
+[132511989551978510]tweet+user6_2th @user8 #topic6 
+[132511989552361600]tweet+user6_3th @user9 #topic0 
+[132511989552657510]tweet+user6_4th @user3 #topic2 
+[132511989553111350]tweet+user6_5th @user7 #topic1 
+[132511989553477250]tweet+user6_6th @user0 #topic6 
+[132511989553829060]tweet+user6_7th @user6 #topic2 
+[132511989554203770]tweet+user6_8th @user0 #topic5 
+[132511989554550700]tweet+user6_9th @user2 #topic2 
+[132511989554963910]tweet+user6_10th @user6 #topic6 
+[132511989527038340]tweet+user0_0th @user2 #topic1 
+[132511989527552030]tweet+user0_1th @user4 #topic7 
+[132511989527959020]tweet+user0_2th @user6 #topic4 
+[132511989528323740]tweet+user0_3th @user3 #topic9 
+[132511989528629360]tweet+user0_4th @user1 #topic6 
+[132511989529122360]tweet+user0_5th @user0 #topic2 
+[132511989529420370]tweet+user0_6th @user3 #topic9 
+[132511989529832840]tweet+user0_7th @user6 #topic6 
+[132511989530160920]tweet+user0_8th @user2 #topic6 
+[132511989530635490]tweet+user0_9th @user7 #topic7 
+[132511989530954500]tweet+user0_10th @user9 #topic0 "
+
+[command]querying, ,user7,password7, , , , , 
+[Reply]Text
+  "[success] queryTweetsSubscribed
+[132511989555286440]tweet+user7_0th @user1 #topic5 
+[132511989555747730]tweet+user7_1th @user6 #topic3 
+[132511989556055980]tweet+user7_2th @user3 #topic5 
+[132511989556480440]tweet+user7_3th @user1 #topic9 
+[132511989556759340]tweet+user7_4th @user8 #topic0 
+[132511989557163540]tweet+user7_5th @user3 #topic8 
+[132511989557434230]tweet+user7_6th @user7 #topic3 
+[132511989557832100]tweet+user7_7th @user8 #topic8 
+[132511989558138940]tweet+user7_8th @user4 #topic2 
+[132511989558564290]tweet+user7_9th @user7 #topic8 
+[132511989558908570]tweet+user7_10th @user3 #topic7 
+[132511989527038340]tweet+user0_0th @user2 #topic1 
+[132511989527552030]tweet+user0_1th @user4 #topic7 
+[132511989527959020]tweet+user0_2th @user6 #topic4 
+[132511989528323740]tweet+user0_3th @user3 #topic9 
+[132511989528629360]tweet+user0_4th @user1 #topic6 
+[132511989529122360]tweet+user0_5th @user0 #topic2 
+[132511989529420370]tweet+user0_6th @user3 #topic9 
+[132511989529832840]tweet+user0_7th @user6 #topic6 
+[132511989530160920]tweet+user0_8th @user2 #topic6 
+[132511989530635490]tweet+user0_9th @user7 #topic7 
+[132511989530954500]tweet+user0_10th @user9 #topic0 "
+
+[command]querying, ,user8,password8, , , , , 
+[Reply]Text
+  "[success] queryTweetsSubscribed
+[132511989559209450]tweet+user8_0th @user7 #topic5 
+[132511989559664540]tweet+user8_1th @user0 #topic3 
+[132511989559985950]tweet+user8_2th @user3 #topic8 
+[132511989560434090]tweet+user8_3th @user0 #topic7 
+[132511989560779310]tweet+user8_4th @user9 #topic8 
+[132511989561127000]tweet+user8_5th @user3 #topic8 
+[132511989561428240]tweet+user8_6th @user6 #topic4 
+[132511989561807490]tweet+user8_7th @user4 #topic5 
+[132511989562101880]tweet+user8_8th @user3 #topic3 
+[132511989562481590]tweet+user8_9th @user8 #topic3 
+[132511989562794550]tweet+user8_10th @user3 #topic6 
+[132511989527038340]tweet+user0_0th @user2 #topic1 
+[132511989527552030]tweet+user0_1th @user4 #topic7 
+[132511989527959020]tweet+user0_2th @user6 #topic4 
+[132511989528323740]tweet+user0_3th @user3 #topic9 
+[132511989528629360]tweet+user0_4th @user1 #topic6 
+[132511989529122360]tweet+user0_5th @user0 #topic2 
+[132511989529420370]tweet+user0_6th @user3 #topic9 
+[132511989529832840]tweet+user0_7th @user6 #topic6 
+[132511989530160920]tweet+user0_8th @user2 #topic6 
+[132511989530635490]tweet+user0_9th @user7 #topic7 
+[132511989530954500]tweet+user0_10th @user9 #topic0 "
+
+[command]querying, ,user9,password9, , , , , 
+[Reply]Text
+  "[success] queryTweetsSubscribed
+[132511989563177800]tweet+user9_0th @user8 #topic2 
+[132511989563504120]tweet+user9_1th @user9 #topic3 
+[132511989563880400]tweet+user9_2th @user3 #topic1 
+[132511989564226220]tweet+user9_3th @user0 #topic9 
+[132511989564524230]tweet+user9_4th @user4 #topic8 
+[132511989564944670]tweet+user9_5th @user2 #topic4 
+[132511989565262230]tweet+user9_6th @user7 #topic1 
+[132511989565558610]tweet+user9_7th @user2 #topic0 
+[132511989565965830]tweet+user9_8th @user1 #topic2 
+[132511989566259720]tweet+user9_9th @user9 #topic1 
+[132511989566701810]tweet+user9_10th @user0 #topic4 
+[132511989527038340]tweet+user0_0th @user2 #topic1 
+[132511989527552030]tweet+user0_1th @user4 #topic7 
+[132511989527959020]tweet+user0_2th @user6 #topic4 
+[132511989528323740]tweet+user0_3th @user3 #topic9 
+[132511989528629360]tweet+user0_4th @user1 #topic6 
+[132511989529122360]tweet+user0_5th @user0 #topic2 
+[132511989529420370]tweet+user0_6th @user3 #topic9 
+[132511989529832840]tweet+user0_7th @user6 #topic6 
+[132511989530160920]tweet+user0_8th @user2 #topic6 
+[132511989530635490]tweet+user0_9th @user7 #topic7 
+[132511989530954500]tweet+user0_10th @user9 #topic0 "
+
+[command]#, , , , , ,#topic5, ,
+[Reply]Text
+  "[success] queryHashTag
+[132511989534111830]tweet+user1_8th @user5 #topic5 
+[132511989549008820]tweet+user5_5th @user9 #topic5 
+[132511989554203770]tweet+user6_8th @user0 #topic5 
+[132511989555286440]tweet+user7_0th @user1 #topic5 
+[132511989556055980]tweet+user7_2th @user3 #topic5 
+[132511989559209450]tweet+user8_0th @user7 #topic5 
+[132511989561807490]tweet+user8_7th @user4 #topic5 "
+
+[command]#, , , , , ,#topic8, ,
+[Reply]Text
+  "[success] queryHashTag
+[132511989532419520]tweet+user1_3th @user8 #topic8 
+[132511989533399370]tweet+user1_6th @user9 #topic8 
+[132511989539494810]tweet+user3_1th @user9 #topic8 
+[132511989543111230]tweet+user4_0th @user6 #topic8 
+[132511989547602700]tweet+user5_1th @user1 #topic8 
+[132511989551210480]tweet+user6_0th @user4 #topic8 
+[132511989557163540]tweet+user7_5th @user3 #topic8 
+[132511989557832100]tweet+user7_7th @user8 #topic8 
+[132511989558564290]tweet+user7_9th @user7 #topic8 
+[132511989559985950]tweet+user8_2th @user3 #topic8 
+[132511989560779310]tweet+user8_4th @user9 #topic8 
+[132511989561127000]tweet+user8_5th @user3 #topic8 
+[132511989564524230]tweet+user9_4th @user4 #topic8 "
+
+[command]#, , , , , ,#topic6, ,
+[Reply]Text
+  "[success] queryHashTag
+[132511989528629360]tweet+user0_4th @user1 #topic6 
+[132511989529832840]tweet+user0_7th @user6 #topic6 
+[132511989530160920]tweet+user0_8th @user2 #topic6 
+[132511989535108150]tweet+user2_0th @user4 #topic6 
+[132511989536597810]tweet+user2_4th @user3 #topic6 
+[132511989548317800]tweet+user5_3th @user9 #topic6 
+[132511989548680370]tweet+user5_4th @user8 #topic6 
+[132511989551978510]tweet+user6_2th @user8 #topic6 
+[132511989553477250]tweet+user6_6th @user0 #topic6 
+[132511989554963910]tweet+user6_10th @user6 #topic6 
+[132511989562794550]tweet+user8_10th @user3 #topic6 "
+
+[command]#, , , , , ,#topic4, ,
+[Reply]Text
+  "[success] queryHashTag
+[132511989527959020]tweet+user0_2th @user6 #topic4 
+[132511989535544300]tweet+user2_1th @user6 #topic4 
+[132511989537688260]tweet+user2_7th @user9 #topic4 
+[132511989542101940]tweet+user3_8th @user0 #topic4 
+[132511989544524380]tweet+user4_4th @user8 #topic4 
+[132511989546781420]tweet+user4_10th @user2 #topic4 
+[132511989561428240]tweet+user8_6th @user6 #topic4 
+[132511989564944670]tweet+user9_5th @user2 #topic4 
+[132511989566701810]tweet+user9_10th @user0 #topic4 "
+
+[command]#, , , , , ,#topic4, ,
+[Reply]Text
+  "[success] queryHashTag
+[132511989527959020]tweet+user0_2th @user6 #topic4 
+[132511989535544300]tweet+user2_1th @user6 #topic4 
+[132511989537688260]tweet+user2_7th @user9 #topic4 
+[132511989542101940]tweet+user3_8th @user0 #topic4 
+[132511989544524380]tweet+user4_4th @user8 #topic4 
+[132511989546781420]tweet+user4_10th @user2 #topic4 
+[132511989561428240]tweet+user8_6th @user6 #topic4 
+[132511989564944670]tweet+user9_5th @user2 #topic4 
+[132511989566701810]tweet+user9_10th @user0 #topic4 "
+
+[command]#, , , , , ,#topic9, ,
+[Reply]Text
+  "[success] queryHashTag
+[132511989528323740]tweet+user0_3th @user3 #topic9 
+[132511989529420370]tweet+user0_6th @user3 #topic9 
+[132511989534414430]tweet+user1_9th @user2 #topic9 
+[132511989540607850]tweet+user3_4th @user4 #topic9 
+[132511989550838200]tweet+user5_10th @user0 #topic9 
+[132511989556480440]tweet+user7_3th @user1 #topic9 
+[132511989564226220]tweet+user9_3th @user0 #topic9 "
+
+[command]#, , , , , ,#topic9, ,
+[Reply]Text
+  "[success] queryHashTag
+[132511989528323740]tweet+user0_3th @user3 #topic9 
+[132511989529420370]tweet+user0_6th @user3 #topic9 
+[132511989534414430]tweet+user1_9th @user2 #topic9 
+[132511989540607850]tweet+user3_4th @user4 #topic9 
+[132511989550838200]tweet+user5_10th @user0 #topic9 
+[132511989556480440]tweet+user7_3th @user1 #topic9 
+[132511989564226220]tweet+user9_3th @user0 #topic9 "
+
+[command]#, , , , , ,#topic3, ,
+[Reply]Text
+  "[success] queryHashTag
+[132511989531376670]tweet+user1_0th @user1 #topic3 
+[132511989532036930]tweet+user1_2th @user7 #topic3 
+[132511989534816090]tweet+user1_10th @user6 #topic3 
+[132511989535948700]tweet+user2_2th @user2 #topic3 
+[132511989538700650]tweet+user2_10th @user0 #topic3 
+[132511989539129000]tweet+user3_0th @user5 #topic3 
+[132511989541720260]tweet+user3_7th @user4 #topic3 
+[132511989542437260]tweet+user3_9th @user3 #topic3 
+[132511989545143050]tweet+user4_6th @user1 #topic3 
+[132511989545677300]tweet+user4_7th @user4 #topic3 
+[132511989546070490]tweet+user4_8th @user5 #topic3 
+[132511989547918490]tweet+user5_2th @user9 #topic3 
+[132511989555747730]tweet+user7_1th @user6 #topic3 
+[132511989557434230]tweet+user7_6th @user7 #topic3 
+[132511989559664540]tweet+user8_1th @user0 #topic3 
+[132511989562101880]tweet+user8_8th @user3 #topic3 
+[132511989562481590]tweet+user8_9th @user8 #topic3 
+[132511989563504120]tweet+user9_1th @user9 #topic3 "
+
+[command]#, , , , , ,#topic9, ,
+[Reply]Text
+  "[success] queryHashTag
+[132511989528323740]tweet+user0_3th @user3 #topic9 
+[132511989529420370]tweet+user0_6th @user3 #topic9 
+[132511989534414430]tweet+user1_9th @user2 #topic9 
+[132511989540607850]tweet+user3_4th @user4 #topic9 
+[132511989550838200]tweet+user5_10th @user0 #topic9 
+[132511989556480440]tweet+user7_3th @user1 #topic9 
+[132511989564226220]tweet+user9_3th @user0 #topic9 "
+
+[command]#, , , , , ,#topic0, ,
+[Reply]Text
+  "[success] queryHashTag
+[132511989530954500]tweet+user0_10th @user9 #topic0 
+[132511989533095160]tweet+user1_5th @user6 #topic0 
+[132511989533774710]tweet+user1_7th @user8 #topic0 
+[132511989537301090]tweet+user2_6th @user9 #topic0 
+[132511989538027650]tweet+user2_8th @user6 #topic0 
+[132511989542702600]tweet+user3_10th @user3 #topic0 
+[132511989543808340]tweet+user4_2th @user0 #topic0 
+[132511989549703150]tweet+user5_7th @user0 #topic0 
+[132511989550068800]tweet+user5_8th @user1 #topic0 
+[132511989552361600]tweet+user6_3th @user9 #topic0 
+[132511989556759340]tweet+user7_4th @user8 #topic0 
+[132511989565558610]tweet+user9_7th @user2 #topic0 "
+
+[command]@, , , , , , ,@user4,
+[Reply]Text
+  "[success] queryMention
+[132511989527552030]tweet+user0_1th @user4 #topic7 
+[132511989535108150]tweet+user2_0th @user4 #topic6 
+[132511989540607850]tweet+user3_4th @user4 #topic9 
+[132511989540973880]tweet+user3_5th @user4 #topic7 
+[132511989541720260]tweet+user3_7th @user4 #topic3 
+[132511989545677300]tweet+user4_7th @user4 #topic3 
+[132511989551210480]tweet+user6_0th @user4 #topic8 
+[132511989558138940]tweet+user7_8th @user4 #topic2 
+[132511989561807490]tweet+user8_7th @user4 #topic5 
+[132511989564524230]tweet+user9_4th @user4 #topic8 "
+
+[command]@, , , , , , ,@user1,
+[Reply]Text
+  "[success] queryMention
+[132511989528629360]tweet+user0_4th @user1 #topic6 
+[132511989531376670]tweet+user1_0th @user1 #topic3 
+[132511989538354100]tweet+user2_9th @user1 #topic2 
+[132511989540154980]tweet+user3_3th @user1 #topic1 
+[132511989545143050]tweet+user4_6th @user1 #topic3 
+[132511989547602700]tweet+user5_1th @user1 #topic8 
+[132511989550068800]tweet+user5_8th @user1 #topic0 
+[132511989555286440]tweet+user7_0th @user1 #topic5 
+[132511989556480440]tweet+user7_3th @user1 #topic9 
+[132511989565965830]tweet+user9_8th @user1 #topic2 "
+
+[command]@, , , , , , ,@user6,
+[Reply]Text
+  "[success] queryMention
+[132511989527959020]tweet+user0_2th @user6 #topic4 
+[132511989529832840]tweet+user0_7th @user6 #topic6 
+[132511989533095160]tweet+user1_5th @user6 #topic0 
+[132511989534816090]tweet+user1_10th @user6 #topic3 
+[132511989535544300]tweet+user2_1th @user6 #topic4 
+[132511989538027650]tweet+user2_8th @user6 #topic0 
+[132511989543111230]tweet+user4_0th @user6 #topic8 
+[132511989549329650]tweet+user5_6th @user6 #topic1 
+[132511989553829060]tweet+user6_7th @user6 #topic2 
+[132511989554963910]tweet+user6_10th @user6 #topic6 
+[132511989555747730]tweet+user7_1th @user6 #topic3 
+[132511989561428240]tweet+user8_6th @user6 #topic4 "
+
+[command]@, , , , , , ,@user8,
+[Reply]Text
+  "[success] queryMention
+[132511989532419520]tweet+user1_3th @user8 #topic8 
+[132511989533774710]tweet+user1_7th @user8 #topic0 
+[132511989543410200]tweet+user4_1th @user8 #topic7 
+[132511989544101440]tweet+user4_3th @user8 #topic2 
+[132511989544524380]tweet+user4_4th @user8 #topic4 
+[132511989548680370]tweet+user5_4th @user8 #topic6 
+[132511989551978510]tweet+user6_2th @user8 #topic6 
+[132511989556759340]tweet+user7_4th @user8 #topic0 
+[132511989557832100]tweet+user7_7th @user8 #topic8 
+[132511989562481590]tweet+user8_9th @user8 #topic3 
+[132511989563177800]tweet+user9_0th @user8 #topic2 "
+
+[command]@, , , , , , ,@user3,
+[Reply]Text
+  "[success] queryMention
+[132511989528323740]tweet+user0_3th @user3 #topic9 
+[132511989529420370]tweet+user0_6th @user3 #topic9 
+[132511989536597810]tweet+user2_4th @user3 #topic6 
+[132511989536986740]tweet+user2_5th @user3 #topic1 
+[132511989542437260]tweet+user3_9th @user3 #topic3 
+[132511989542702600]tweet+user3_10th @user3 #topic0 
+[132511989544867420]tweet+user4_5th @user3 #topic1 
+[132511989552657510]tweet+user6_4th @user3 #topic2 
+[132511989556055980]tweet+user7_2th @user3 #topic5 
+[132511989557163540]tweet+user7_5th @user3 #topic8 
+[132511989558908570]tweet+user7_10th @user3 #topic7 
+[132511989559985950]tweet+user8_2th @user3 #topic8 
+[132511989561127000]tweet+user8_5th @user3 #topic8 
+[132511989562101880]tweet+user8_8th @user3 #topic3 
+[132511989562794550]tweet+user8_10th @user3 #topic6 
+[132511989563880400]tweet+user9_2th @user3 #topic1 "
+
+[command]@, , , , , , ,@user0,
+[Reply]Text
+  "[success] queryMention
+[132511989529122360]tweet+user0_5th @user0 #topic2 
+[132511989538700650]tweet+user2_10th @user0 #topic3 
+[132511989542101940]tweet+user3_8th @user0 #topic4 
+[132511989543808340]tweet+user4_2th @user0 #topic0 
+[132511989546390710]tweet+user4_9th @user0 #topic1 
+[132511989549703150]tweet+user5_7th @user0 #topic0 
+[132511989550838200]tweet+user5_10th @user0 #topic9 
+[132511989553477250]tweet+user6_6th @user0 #topic6 
+[132511989554203770]tweet+user6_8th @user0 #topic5 
+[132511989559664540]tweet+user8_1th @user0 #topic3 
+[132511989560434090]tweet+user8_3th @user0 #topic7 
+[132511989564226220]tweet+user9_3th @user0 #topic9 
+[132511989566701810]tweet+user9_10th @user0 #topic4 "
+
+[command]@, , , , , , ,@user5,
+[Reply]Text
+  "[success] queryMention
+[132511989532717440]tweet+user1_4th @user5 #topic7 
+[132511989534111830]tweet+user1_8th @user5 #topic5 
+[132511989536292340]tweet+user2_3th @user5 #topic1 
+[132511989539129000]tweet+user3_0th @user5 #topic3 
+[132511989546070490]tweet+user4_8th @user5 #topic3 "
+
+[command]@, , , , , , ,@user8,
+[Reply]Text
+  "[success] queryMention
+[132511989532419520]tweet+user1_3th @user8 #topic8 
+[132511989533774710]tweet+user1_7th @user8 #topic0 
+[132511989543410200]tweet+user4_1th @user8 #topic7 
+[132511989544101440]tweet+user4_3th @user8 #topic2 
+[132511989544524380]tweet+user4_4th @user8 #topic4 
+[132511989548680370]tweet+user5_4th @user8 #topic6 
+[132511989551978510]tweet+user6_2th @user8 #topic6 
+[132511989556759340]tweet+user7_4th @user8 #topic0 
+[132511989557832100]tweet+user7_7th @user8 #topic8 
+[132511989562481590]tweet+user8_9th @user8 #topic3 
+[132511989563177800]tweet+user9_0th @user8 #topic2 "
+
+[command]@, , , , , , ,@user6,
+[Reply]Text
+  "[success] queryMention
+[132511989527959020]tweet+user0_2th @user6 #topic4 
+[132511989529832840]tweet+user0_7th @user6 #topic6 
+[132511989533095160]tweet+user1_5th @user6 #topic0 
+[132511989534816090]tweet+user1_10th @user6 #topic3 
+[132511989535544300]tweet+user2_1th @user6 #topic4 
+[132511989538027650]tweet+user2_8th @user6 #topic0 
+[132511989543111230]tweet+user4_0th @user6 #topic8 
+[132511989549329650]tweet+user5_6th @user6 #topic1 
+[132511989553829060]tweet+user6_7th @user6 #topic2 
+[132511989554963910]tweet+user6_10th @user6 #topic6 
+[132511989555747730]tweet+user7_1th @user6 #topic3 
+[132511989561428240]tweet+user8_6th @user6 #topic4 "
+
+[command]@, , , , , , ,@user0,
+[Reply]Text
+  "[success] queryMention
+[132511989529122360]tweet+user0_5th @user0 #topic2 
+[132511989538700650]tweet+user2_10th @user0 #topic3 
+[132511989542101940]tweet+user3_8th @user0 #topic4 
+[132511989543808340]tweet+user4_2th @user0 #topic0 
+[132511989546390710]tweet+user4_9th @user0 #topic1 
+[132511989549703150]tweet+user5_7th @user0 #topic0 
+[132511989550838200]tweet+user5_10th @user0 #topic9 
+[132511989553477250]tweet+user6_6th @user0 #topic6 
+[132511989554203770]tweet+user6_8th @user0 #topic5 
+[132511989559664540]tweet+user8_1th @user0 #topic3 
+[132511989560434090]tweet+user8_3th @user0 #topic7 
+[132511989564226220]tweet+user9_3th @user0 #topic9 
+[132511989566701810]tweet+user9_10th @user0 #topic4 "
+
+------------------------------------------------- 
+ 
+-------------------------------------------------   
+ 10 Randon Ops and send tweet...   
+-------------------------------------------------   
+[command]@,POST,user3,password3,user3,tweet3... #topic1...@user5 ,#topic1,@user5,register
+[Reply]Text
+  "[success] queryMention
+[132511989532717440]tweet+user1_4th @user5 #topic7 
+[132511989534111830]tweet+user1_8th @user5 #topic5 
+[132511989536292340]tweet+user2_3th @user5 #topic1 
+[132511989539129000]tweet+user3_0th @user5 #topic3 
+[132511989546070490]tweet+user4_8th @user5 #topic3 "
+
+[command]send,POST,user4,password4,user7,tweet9... #topic1...@user6 ,#topic1,@user6,register
+[Reply]Text "[success] sent twitter: [132511989584705480]tweet9... #topic1...@user6 "
+
+[command]send,POST,user6,password6,user7,tweet1... #topic1...@user0 ,#topic1,@user0,register
+[Reply]Text "[success] sent twitter: [132511989585006720]tweet1... #topic1...@user0 "
+
+[command]#,POST,user2,password2,user9,tweet6... #topic1...@user0 ,#topic1,@user0,register
+[Reply]Text
+  "[success] queryHashTag
+[132511989527038340]tweet+user0_0th @user2 #topic1 
+[132511989531729160]tweet+user1_1th @user7 #topic1 
+[132511989536292340]tweet+user2_3th @user5 #topic1 
+[132511989536986740]tweet+user2_5th @user3 #topic1 
+[132511989540154980]tweet+user3_3th @user1 #topic1 
+[132511989541288970]tweet+user3_6th @user9 #topic1 
+[132511989544867420]tweet+user4_5th @user3 #topic1 
+[132511989546390710]tweet+user4_9th @user0 #topic1 
+[132511989547112220]tweet+user5_0th @user7 #topic1 
+[132511989549329650]tweet+user5_6th @user6 #topic1 
+[132511989551593530]tweet+user6_1th @user9 #topic1 
+[132511989553111350]tweet+user6_5th @user7 #topic1 
+[132511989563880400]tweet+user9_2th @user3 #topic1 
+[132511989565262230]tweet+user9_6th @user7 #topic1 
+[132511989566259720]tweet+user9_9th @user9 #topic1 "
+
+[command]@,POST,user6,password6,user4,tweet0... #topic4...@user6 ,#topic4,@user6,register
+[Reply]Text
+  "[success] queryMention
+[132511989527959020]tweet+user0_2th @user6 #topic4 
+[132511989529832840]tweet+user0_7th @user6 #topic6 
+[132511989533095160]tweet+user1_5th @user6 #topic0 
+[132511989534816090]tweet+user1_10th @user6 #topic3 
+[132511989535544300]tweet+user2_1th @user6 #topic4 
+[132511989538027650]tweet+user2_8th @user6 #topic0 
+[132511989543111230]tweet+user4_0th @user6 #topic8 
+[132511989549329650]tweet+user5_6th @user6 #topic1 
+[132511989553829060]tweet+user6_7th @user6 #topic2 
+[132511989554963910]tweet+user6_10th @user6 #topic6 
+[132511989555747730]tweet+user7_1th @user6 #topic3 
+[132511989561428240]tweet+user8_6th @user6 #topic4 
+[132511989584705480]tweet9... #topic1...@user6 "
+
+[command]@,POST,user2,password2,user7,tweet0... #topic0...@user5 ,#topic0,@user5,register
+[Reply]Text
+  "[success] queryMention
+[132511989532717440]tweet+user1_4th @user5 #topic7 
+[132511989534111830]tweet+user1_8th @user5 #topic5 
+[132511989536292340]tweet+user2_3th @user5 #topic1 
+[132511989539129000]tweet+user3_0th @user5 #topic3 
+[132511989546070490]tweet+user4_8th @user5 #topic3 "
+
+[command]retweet,POST,user2,password2,user1,tweet4... #topic0...@user1 ,#topic0,@user1,register
+[Reply]Text
+  "[retweet][success] sent twitter: [retweet][132511989586446430]tweet4... #topic0...@user1 "
+
+[command]#,POST,user3,password3,user8,tweet6... #topic1...@user6 ,#topic1,@user6,register
+[Reply]Text
+  "[success] queryHashTag
+[132511989527038340]tweet+user0_0th @user2 #topic1 
+[132511989531729160]tweet+user1_1th @user7 #topic1 
+[132511989536292340]tweet+user2_3th @user5 #topic1 
+[132511989536986740]tweet+user2_5th @user3 #topic1 
+[132511989540154980]tweet+user3_3th @user1 #topic1 
+[132511989541288970]tweet+user3_6th @user9 #topic1 
+[132511989544867420]tweet+user4_5th @user3 #topic1 
+[132511989546390710]tweet+user4_9th @user0 #topic1 
+[132511989547112220]tweet+user5_0th @user7 #topic1 
+[132511989549329650]tweet+user5_6th @user6 #topic1 
+[132511989551593530]tweet+user6_1th @user9 #topic1 
+[132511989553111350]tweet+user6_5th @user7 #topic1 
+[132511989563880400]tweet+user9_2th @user3 #topic1 
+[132511989565262230]tweet+user9_6th @user7 #topic1 
+[132511989566259720]tweet+user9_9th @user9 #topic1 "
+
+[command]retweet,POST,user2,password2,user1,tweet2... #topic3...@user6 ,#topic3,@user6,register
+[Reply]Text
+  "[retweet][success] sent twitter: [retweet][132511989587088890]tweet2... #topic3...@user6 "
+
+The time of register 10 users is 3142.870400
+The time of send 10 tweets is 4020.231500
+The time of Zipf subscribe 10 users is 641.894300
+The time of query 10 users is 375.347900
+The time of query 10 hasgtag is 347.834700
+The time of query 10 mention is 350.730900
+The time of 10 random operations is 319.913400
+Total Result: 3142.870400 4020.231500 641.894300 375.347900 347.834700 350.730900 319.913400
+
+Process finished with exit code 0.
