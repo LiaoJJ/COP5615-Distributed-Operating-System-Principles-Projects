@@ -3,6 +3,7 @@ add all the package on the top of file. If there is a version, it will be better
 ```
 #r "nuget: Akka" 
 #r "nuget: Akka.FSharp" 
+#r "nuget: Akka.Remote" 
 #r "nuget: Akka.TestKit" 
 ```
 

@@ -5,15 +5,18 @@
 - Jingzhou Hu, 11319238
 
 ## Youtube Video explanation
-[https://youtu.be/FIDiMRa-ubQ](https://youtu.be/FIDiMRa-ubQ)
+[https://youtu.be/x27j8ZsE_zE](https://youtu.be/x27j8ZsE_zE)
 
 ## Description
 We finish **all** requirements of Project 4 Part II
 
-Based on Project4 Part I, we developed a Websocket based API for our Twitter, it uses a POST Method and route to a specific link address, The body is a JSON string, the "command" field of the JSON will be the command for the Twitter Server, which is exactly the same as Project4 Part I:
+Based on Project4 Part I, we developed a Websocket based API for our Twitter, it route to a specific link address, The body is a JSON string, the "command" field of the JSON will be the command for the Twitter Server, which is exactly the same as Project4 Part I:
 ```
-POST http://127.0.0.1:8080/twitter
-Body: {"command":"reg, ,user1,123456, , , , , "}
+http://127.0.0.1:8080/twitter
+
+un-encrypted Body: {"command":"reg, ,user1,123456, , , , , "}
+
+encrypted Body: {"command":"pOAbwGSJbIR3SrcUTVTEAu6eyHLzVtYdjibRnEEly570pqpIm6jaoFQbdBy2RTRCdCdnD94uYdE4O5ZpNrkhxXZnp8rFh7bh4XvaGxSvh0/0Bo8CAoKHgtChEOGmzEFG"}
 ```
 
 
@@ -21,19 +24,37 @@ We re-write parts of our server using WebSharper to implement the WebSocket inte
 
 We re-write parts of our client to use WebSockets, we replace the AKKA actor to WebSockets sender.
 
+#### Bonus Encryption
+Due to the lack of support of RSA-2048 on Fsharp.(Actually we do have RSA-2048 version but there is some issue for F# support, so we choose other encryption method.)For the Encryption part, Ciphertext authenticity, based on.NET Framework, is verified with HMAC SHA256.(AS professor said, we can use some api: https://github.com/tasos-py/AES-Encryption-Classes, which is a Advanced Encryption Standard encryption with good F# support.)
+
+After joining the Encryption, our program is relatively slow.
+
+###### Encryption Display
+
+Client:
+
+```
+[Before Encrypt]reg, ,user1,123456, , , , ,
+[AfterEncrypted]pOAbwGSJbIR3SrcUTVTEAu6eyHLzVtYdjibRnEEly570pqpIm6jaoFQbdBy2RTRCdCdnD94uYdE4O5ZpNrkhxXZnp8rFh7bh4XvaGxSvh0/0Bo8CAoKHgtChEOGmzEFG
+```
+
+Server
+
+```
+[BeforeDecrypted:]pOAbwGSJbIR3SrcUTVTEAu6eyHLzVtYdjibRnEEly570pqpIm6jaoFQbdBy2RTRCdCdnD94uYdE4O5ZpNrkhxXZnp8rFh7bh4XvaGxSvh0/0Bo8CAoKHgtChEOGmzEFG
+[decrypted Message:]reg, ,user1,123456, , , , ,
+```
 
 
-## Some Modification
 
-Instead of WebSocket, we use HTTP of WebSharper to finish our job.
 
 
 
 ## Running
 There 3 files we provide in ./fs
-- `HTTPServer.fs` is the server
-- `HTTPClientOne.fs` is the client
-- `HTTPClient.fs` is for performance test
+- `Server.fs` is the server
+- `ClientOne.fs` is the client
+- `Client.fs` is for performance test
 
 You may run these files in Visual Studio or JetBrains Rider IDE
 
@@ -115,6 +136,9 @@ send, ,user2,123456, ,tweet7, , ,
 ![](pictures/5.png)
 
 #### Example 4: Performance Test
+
+`(All performance test is run without Encryption)`
+
 - Firstly, open a Server as mentioned above.
 - Then, run ClientPerformanceTest, You can change the 10 to any integer, it represents the number of users
 
@@ -170,7 +194,7 @@ For other operations, it just need N operations, so they don't cost as much time
 
 
 
-The difference with Part I is that the overhead of query is not that significant, since HTTP has bigger packet size than AKKA Message.
+The difference with Part I is that the overhead of query is not that significant, since WebSocket has bigger packet size than AKKA Message.
 
 
 

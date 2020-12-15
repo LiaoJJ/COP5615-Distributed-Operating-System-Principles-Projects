@@ -1,5 +1,5 @@
 ﻿open System
-//#time
+#time
 let square  = fun (x:int64)->x*x
 
 let isSquare n = (square (int64(sqrt (double n)))) = n
@@ -56,7 +56,7 @@ let list = bossFunc()
 list |> List.map(fun x->(int)x) |> List.sort |> Seq.iter (fun x -> printf "%d " x)
 
 printfn "\n "
-//#time
+#time
 
 //printfn "end Async Task"
 
